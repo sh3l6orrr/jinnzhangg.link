@@ -30,6 +30,7 @@ main {
 }
 
 #content {
+  position: absolute;
   margin-top: 6rem;
   margin-bottom: 2rem;
   width: 55vw;
