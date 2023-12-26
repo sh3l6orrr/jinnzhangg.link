@@ -13,9 +13,7 @@ export default function Home({ isMobile }) {
           <h2>Announcements</h2>
           <Space h="1rem" />
           <ul>
-            <li>Enlaver is live: <a className="highlight" href='https://enclaver.link'>https://enclaver.link</a></li>
-            {/* <li>Check out my online snacks store, <a href='https://korai.link'>KORAI</a>.</li> */}
-            <li><Link to='sponsor'>Sponsoring me</Link> is much appreciated.</li>
+            <li>Enclaver, a minimalist social platform is live: <a className="highlight" href='https://enclaver.link'>https://enclaver.link</a></li>
             <li>Welcome to my personal website! <Link to='about'>Read about me</Link>. </li>
           </ul>
         </div>
