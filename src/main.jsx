@@ -9,6 +9,7 @@ import Home from './components/Home/Home.jsx'
 import About from './components/About/About.jsx'
 import Sponsor from './components/Sponsor2/Sponsor.jsx'
 import Porfolio from './components/Porfolio/Porfolio.jsx'
+import { createHashRouter } from 'react-router-dom'
 
 
 function App() {
@@ -21,7 +22,7 @@ function App() {
     return () => window.removeEventListener('resize', handleResize)
   }, [])
 
-  const router = createBrowserRouter([
+  const router = createHashRouter([
     {
       path: "/",
       element: <Frame
