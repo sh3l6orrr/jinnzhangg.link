@@ -26,6 +26,8 @@ const enclaver = {
 const prollyYes = {
   title: "Prolly Yes",
   description: "Easy way to visualize probability distributions.",
+  link: 'https://prolly-yes.com',
+  img: '/prolly.png',
   tech: "React, Flask, AWS Lambda, Altair",
 }
 

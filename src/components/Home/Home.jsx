@@ -12,7 +12,9 @@ export default function Home({ isMobile }) {
         <div className='modal-content' style={{ maxWidth: "90vw" }}>
           <h2>Announcements</h2>
           <Space h="1rem" />
+
           <ul>
+            <li>ProllyYes, a web app to visualize probability distributions is live: <a className="highlight" href='https://prolly-yes.com'>https://prolly-yes.com</a></li>
             <li>Enclaver, a minimalist social platform is live: <a className="highlight" href='https://enclaver.link'>https://enclaver.link</a></li>
             <li>Welcome to my personal website! <Link to='about'>Read about me</Link>. </li>
           </ul>
