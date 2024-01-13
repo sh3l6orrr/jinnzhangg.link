@@ -1,4 +1,6 @@
-import React, { useEffect } from 'react';
+'use client'
+
+import { useEffect } from 'react';
 import './util.css'
 import { useRef } from 'react';
 
@@ -12,16 +14,6 @@ export const useClickOutside = (ref, callback) => {
   }, [ref, callback])
 }
 
-export function Seperator() {
-  return <>
-    <div className='seperator' />
-  </>
-}
-export function Space({ h, w }) {
-  return <>
-    <div style={{ height: h ?? "auto", width: w ?? "auto" }} />
-  </>
-}
 
 export function Modal({ children, hideModalCallback }) {
   const ref = useRef(null)
@@ -32,22 +24,6 @@ export function Modal({ children, hideModalCallback }) {
       <div ref={ref} className="modal-content">
         {children}
       </div>
-    </div>
-  </>
-}
-export function Filler() {
-  return <>
-    <div style={{ flexGrow: "1" }} />
-  </>
-}
-
-export function Dropdown({ children, hideDropdownCallback }) {
-  const ref = useRef(null)
-  useClickOutside(ref, hideDropdownCallback)
-
-  return <>
-    <div ref={ref} className="dropdown">
-      {children}
     </div>
   </>
 }

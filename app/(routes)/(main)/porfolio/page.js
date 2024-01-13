@@ -1,18 +1,17 @@
-import React from "react";
-import { Seperator, Space } from "../../util";
 
 export default function Porfolio() {
-  return (
-    <>
-      <Card data={enclaver} />
-      <Space h='1rem' />
-      <Card data={prollyYes} />
-      <Space h='1rem' />
-      <Card data={chordentify} />
-      <Space h='1rem' />
-      <Card data={robotPathPlanning} />
-    </>
-  );
+  return <div>
+    <h1>Porfolio</h1>
+    <div className="h-8" />
+    <Card data={enclaver} />
+    <div className="h-4" />
+    <Card data={prollyYes} />
+    <div className="h-4" />
+    <Card data={chordentify} />
+    <div className="h-4" />
+    <Card data={robotPathPlanning} />
+  </div>
+
 }
 
 const enclaver = {
@@ -47,15 +46,7 @@ const robotPathPlanning = {
 function Card({ data }) {
   return (
     <>
-      <div
-        style={{
-          borderRadius: "10px",
-          border: "1px solid",
-          padding: "1rem",
-          display: "flex",
-          justifyContent: 'space-between'
-        }}
-      >
+      <div className="p-4 flex justify-between items-center rounded border">
         <div>
           <h3>{data.title}</h3>
           {data.description}<br />
@@ -70,7 +61,7 @@ function Card({ data }) {
         </div>
         {data.img && (
           <div >
-            <img style={{width: '15rem'}} src={data.img}></img >
+            <img style={{ width: '15rem' }} src={data.img}></img >
           </div>
         )}
       </div>
