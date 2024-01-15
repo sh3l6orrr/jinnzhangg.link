@@ -1,4 +1,6 @@
-import React from "react"
+export const metadata = {
+  title: "Sponsor"
+}
 
 export default function Sponsor() {
   return <div>
