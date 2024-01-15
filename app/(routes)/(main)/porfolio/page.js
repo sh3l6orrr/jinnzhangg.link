@@ -1,3 +1,4 @@
+import Image from "next/image";
 
 export default function Porfolio() {
   return <div>
@@ -23,9 +24,9 @@ const enclaver = {
 };
 
 const prollyYes = {
-  title: "Prolly Yes",
+  title: "ProllyYes",
   description: "Easy way to visualize probability distributions.",
-  link: 'https://prolly-yes.com',
+  link: 'https://probability.prolly-yes.com',
   img: '/prolly.png',
   tech: "React, Flask, AWS Lambda, Altair",
 }
@@ -46,13 +47,13 @@ const robotPathPlanning = {
 function Card({ data }) {
   return (
     <>
-      <div className="p-4 flex justify-between items-center rounded border">
+      <div className="p-4 flex justify-between items-center rounded-xl border">
         <div>
           <h3>{data.title}</h3>
           {data.description}<br />
-          <code>{data.tech}</code><br />
+          <code className="text-sm">{data.tech}</code><br />
           {data.link ? (
-            <a className="highlight" href={data.link}>
+            <a className="text-blue-500" href={data.link}>
               {data.link}
             </a>
           ) : (
@@ -61,7 +62,7 @@ function Card({ data }) {
         </div>
         {data.img && (
           <div >
-            <img style={{ width: '15rem' }} src={data.img}></img >
+            <Image alt='' height={0} width={350} src={data.img}/>
           </div>
         )}
       </div>

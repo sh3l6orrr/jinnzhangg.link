@@ -6,14 +6,16 @@ import Navbar from './Navbar'
 export default function Frame({ children }) {
 
 
-  return <>
+  return <div>
     <Navbar />
     <Sidebar />
     <Header />
-    <main className='bg-white dark:bg-black rounded-3xl w-full md:w-3/5 md:left-1/4 top-24 absolute min-h-96 p-8'>
+    <div className='md:h-24 h-12' />
+    <main className='bg-white dark:bg-black rounded-3xl md:mr-32 md:ml-80 p-12 shadow-lg dark:md:border'>
       {children}
-      <div className='h-12' />
+
     </main>
+    <div className='h-12' />
     
-  </>
+  </div>
 }

@@ -1,15 +1,16 @@
 import React from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 
 
 export default function Header() {
 
   return <>
-    <header className='fixed w-full h-18 bg-white dark:bg-black p-4 px-12'>
+    <header className='fixed w-full h-14 top-0 bg-white dark:bg-black p-4 px-16 border-b'>
 
       <div >
         <Link href='/' className='flex items-center gap-3'>
-          <img style={{ height: "2rem", width: "2rem" }} src="../icon.png" />
+          <Image height={30} width={30} alt='' src="/icon.png" />
           <b>Jin&apos;s vantage</b>
         </Link>
       </div>

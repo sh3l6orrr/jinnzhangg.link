@@ -15,13 +15,13 @@ export default function About() {
 
           I want to do something cool and unique in my life. I am interested in data, ML, and I also want to learn the newest and coolest web technologies. Other than that, I have a dream of opening my own bussiness. Currently, I&apos;m based in Los Angeles. <br /><br />
 
-          📫 Email: <a className="highlight" href="mailto:jinzhang2357@gmail.com">jinzhang2357@gmail.com</a> <br />
-          🧑‍💻 Github: <a className="highlight" href="https://github.com/sh3l6orrr">https://github.com/sh3l6orrr</a>
+          📫 Email: <a className="text-blue-500" href="mailto:jinzhang2357@gmail.com">jinzhang2357@gmail.com</a> <br />
+          🧑‍💻 Github: <a className="text-blue-500" href="https://github.com/sh3l6orrr">https://github.com/sh3l6orrr</a>
         </p>
       </div>
       <div className="h-8 md:w-8"></div>
       <div className=''>
-        <Image className='border rounded-lg' src="/selfie2.jpeg" width={300} height={500} />
+        <Image className='border rounded-lg' alt='selfie' src="/selfie2.jpeg" width={300} height={0} />
       </div>
     </div>
   </>
