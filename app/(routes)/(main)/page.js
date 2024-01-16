@@ -32,8 +32,8 @@ export default function Home() {
       <div className='h-16' />
 
       <ul>
-        <li>ProllyYes, a web app to visualize probability distributions is live: <a className="text-blue-500" href='https://prolly-yes.com'>https://prolly-yes.com</a></li>
-        <li>Enclaver, a minimalist social platform is live: <a className="text-blue-500" href='https://enclaver.link'>https://enclaver.link</a></li>
+        <li><a className="text-blue-500" href='https://probability.prolly-yes.com'>ProllyYes</a>, a web app to visualize probability distributions is live.</li>
+        <li><a className="text-blue-500" href='https://enclaver.link'>Enclaver</a>, a minimalist social platform is live.</li>
         <li>Welcome to my personal website! <Link href='about' className="text-blue-500">Read about me</Link>. </li>
       </ul>
     </div>
