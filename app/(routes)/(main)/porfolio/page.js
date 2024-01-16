@@ -58,7 +58,7 @@ function Card({ title, description, tech, link, img }) {
           <code className="text-sm">{tech}</code><br />
           {link ? (
             <a className="text-blue-500" href={link}>
-              {link}
+              Visit site
             </a>
           ) : (
             <i style={{ color: "grey" }}> Under development.</i>
